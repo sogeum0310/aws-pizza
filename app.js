@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://ec2-3-35-220-82.ap-northeast-2.compute.amazonaws.com:27017/test');
 
 const Cat = mongoose.model('Cat', { name: String });
 
