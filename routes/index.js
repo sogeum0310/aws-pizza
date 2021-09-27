@@ -4,7 +4,7 @@ var Cat = require('../models/cat')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express for Sogeum AWS' });
 });
 
 module.exports = router;
