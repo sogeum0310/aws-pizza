@@ -14,9 +14,6 @@ mongoose.connect('mongodb://ec2-3-35-220-82.ap-northeast-2.compute.amazonaws.com
 
 const Cat = mongoose.model('Cat', { name: String });
 
-// const kitty = new Cat({ name: 'Zildjian' });
-// kitty.save().then(() => console.log('meow'));
-
 Cat.find().exec(function (err, docs) {
   console.log(docs)
 })
